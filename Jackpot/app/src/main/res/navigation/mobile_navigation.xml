@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="bee.design.jackpot.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="bee.design.jackpot.ui.camera.CameraFragment"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/navigation_plus"
+        android:name="bee.design.jackpot.ui.plus.plusFragment"
+        tools:layout="@layout/fragment_plus" />
+
+    <fragment
+        android:id="@+id/navigation_chart"
+        android:name="bee.design.jackpot.ui.chart.ChartFragment"
+        tools:layout="@layout/fragment_chart" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="bee.design.jackpot.ui.setting.SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

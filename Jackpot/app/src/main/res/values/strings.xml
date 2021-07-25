@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jackpot</string>
+    <string name="title_home">Home</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_plus">Plus</string>
+    <string name="title_chart">Chart</string>
+    <string name="title_setting">Setting</string>
+</resources>
