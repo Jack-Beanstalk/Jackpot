@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setSupportActionBar(findViewById(R.id.my_toolbar))
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_camera, R.id.navigation_plus, R.id.navigation_chart, R.id.navigation_setting
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
+//        navView.setupWithNavController(navController)
     }
 }
