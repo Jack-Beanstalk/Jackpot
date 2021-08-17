@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:gravity="center_horizontal"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="0dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Jackpot"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/title"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/plantSearchView"
+            android:layout_marginBottom="11dp"
+            android:layout_width="match_parent"
+            android:layout_height= "?attr/actionBarSize"
+            android:layout_marginHorizontal="23dp"
+            app:queryHint="식물 이름을 입력해주세요"
+            android:background="@drawable/searchbar"
+
+            >
+        </androidx.appcompat.widget.SearchView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/PlantRegisterStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록되어있는 식물이 없어요."
+        android:layout_marginHorizontal="23dp"
+        />
+
+    <TextView
+        android:id="@+id/plantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="23dp"
+        />
+    <ImageView
+        android:id="@+id/plantImage"
+        android:layout_width="170dp"
+        android:layout_height="170dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="정보"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="23dp"
+        />
+    <TextView
+        android:id="@+id/plantInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="23dp"
+        android:background="@drawable/plant_information"/>
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="23dp"
+        android:background="@drawable/main_button"
+        android:text="등록 완료"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
