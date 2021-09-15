@@ -1,7 +1,7 @@
 package bee.design.jackpot
 import android.R.bool
 
-class PlantInfo(plantName: String?, plantCode: String?, rtnFileCours: String?, rtnStreFileNm: String?) {
+class PlantInfo {
 
     var saved: bool? = null
     var plantName: String? = null
@@ -9,5 +9,4 @@ class PlantInfo(plantName: String?, plantCode: String?, rtnFileCours: String?, r
     var rtnFileCours: String? = null
     var rtnStreFileNm: String? = null
     var fncltyInfo: String? = null
-
 }
